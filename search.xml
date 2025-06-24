@@ -4,13 +4,31 @@
   
     
     <entry>
-      <title>这是一篇新我的博文</title>
-      <link href="/smk/%E8%BF%99%E6%98%AF%E4%B8%80%E7%AF%87%E6%96%B0%E6%88%91%E7%9A%84%E5%8D%9A%E6%96%87/"/>
-      <url>/smk/%E8%BF%99%E6%98%AF%E4%B8%80%E7%AF%87%E6%96%B0%E6%88%91%E7%9A%84%E5%8D%9A%E6%96%87/</url>
+      <title>都感觉哦视频分配配电房识破额哦该25ff6</title>
+      <link href="/smk/hkkom/"/>
+      <url>/smk/hkkom/</url>
       
-        <content type="html"><![CDATA[<div class="video-container">[up主专用，视频内嵌代码贴在这]</div><style>.video-container {    position: relative;    width: 100%;    padding-top: 56.25%; /* 16:9 aspect ratio (height/width = 9/16 * 100%) */}.video-container iframe {    position: absolute;    top: 0;    left: 0;    width: 100%;    height: 100%;}</style>]]></content>
+        <content type="html"><![CDATA[<div class="video-container" id="videoContainer"></div><style>.video-container {  position: relative;  width: 100%;  padding-top: 56.25%; /* 16:9 */  background: #000;}.video-container iframe,.video-container video {  position: absolute;  top: 0; left: 0;  width: 100%;  height: 100%;  border: none;}</style><script>function embedVideo(containerId, videoUrl) {  const container = document.getElementById(containerId);  container.innerHTML = '';  if (!videoUrl) {    container.innerHTML = '<p style="color:#fff;text-align:center;">无有效视频链接</p>';    return;  }  const youtubeMatch = videoUrl.match(/(?:youtu\.be\/|youtube\.com\/watch\?v=|youtube\.com\/embed\/)([a-zA-Z0-9_-]+)/);  let element;  if (youtubeMatch) {    const videoId = youtubeMatch[1];    element = document.createElement('iframe');    element.src = `https://www.youtube.com/embed/${videoId}`;    element.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';    element.allowFullscreen = true;    element.title = 'YouTube video player';    element.referrerPolicy = 'strict-origin-when-cross-origin';  } else if (videoUrl.match(/\.(mp4|webm|ogg)(\?.*)?$/i)) {    element = document.createElement('video');    element.src = videoUrl;    element.controls = true;    element.playsInline = true;    element.preload = 'metadata';  } else {    container.innerHTML = '<p style="color:#fff;text-align:center;">不支持的视频链接格式</p>';    return;  }  container.appendChild(element);}// 修改这里的视频链接即可const videoUrl = 'https://zb.ccq3.cn/%E5%9B%BE%E7%89%87/%E5%A5%BD%E7%9C%8B%E5%90%97.mp4';embedVideo('videoContainer', videoUrl);</script>]]></content>
       
       
+      <categories>
+          
+          <category> 前端 </category>
+          
+          <category> 个人日志 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 博客 </tag>
+            
+            <tag> 技术 </tag>
+            
+            <tag> Hexo </tag>
+            
+        </tags>
       
     </entry>
     
@@ -22,6 +40,19 @@
       <url>/smk/hello-world/</url>
       
         <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p><h3 id="配置主题与主站配置文件-到这一步主题部署就完成了"><a href="#配置主题与主站配置文件-到这一步主题部署就完成了" class="headerlink" title="配置主题与主站配置文件,到这一步主题部署就完成了"></a>配置主题与主站配置文件,到这一步主题部署就完成了</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">本地预览</span><br><span class="line">hexo cl; hexo s</span><br><span class="line"></span><br><span class="line">//推送更新上线</span><br><span class="line">hexo cl; hexo g; hexo d</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>slv</title>
+      <link href="/smk/slv/"/>
+      <url>/smk/slv/</url>
+      
+        <content type="html"><![CDATA[<div class="video-container">[up主专用，视频内嵌代码贴在这]</div><style>.video-container {    position: relative;    width: 100%;    padding-top: 56.25%; /* 16:9 aspect ratio (height/width = 9/16 * 100%) */}.video-container iframe {    position: absolute;    top: 0;    left: 0;    width: 100%;    height: 100%;}</style>]]></content>
       
       
       
