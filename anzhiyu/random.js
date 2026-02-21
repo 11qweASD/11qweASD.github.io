@@ -1,3 +1,3 @@
-var posts=["2026/02/21/My-Nest/","2026/02/21/hello-world/"];function toRandomPost(){
+var posts=["k/My-Newst/","k/My-st/","k/My-Nest/","k/hello-world/"];function toRandomPost(){
     pjax.loadUrl('/'+posts[Math.floor(Math.random() * posts.length)]);
   };
